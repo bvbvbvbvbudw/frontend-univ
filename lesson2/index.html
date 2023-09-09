@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first lesson</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <p>hello world!</p>
+
+        <h1 id="one">Header 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cum molestias quae nobis asperiores, vitae nemo labore voluptatem excepturi molestiae, hic ipsum soluta nesciunt, autem accusantium omnis ipsam a ducimus?</p>
+        <h2 id="two">Header 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cum molestias quae nobis asperiores, vitae nemo labore voluptatem excepturi molestiae, hic ipsum soluta nesciunt, autem accusantium omnis ipsam a ducimus?</p>
+        <h3 id="three">Header 3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cum molestias quae nobis asperiores, vitae nemo labore voluptatem excepturi molestiae, hic ipsum soluta nesciunt, autem accusantium omnis ipsam a ducimus?</p>
+        <h4 id="four">Header 4</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cum molestias quae nobis asperiores, vitae nemo labore voluptatem excepturi molestiae, hic ipsum soluta nesciunt, autem accusantium omnis ipsam a ducimus?</p>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+
+        <pre>
+            hello
+                dwa
+        </pre>
+        <div id="my_span">
+            <span>hello</span>
+        </div>
+
+        <b>hello</b>
+        <i>hello</i> <br>
+
+        <img src="basics-html/img/itstep.png" alt="itstep-photo" style="width: 100px; height: 100px;">
+
+        <a href="https://www.google.com/">google com</a>
+        <a href="youtube.com"> yt com</a>
+
+        <ul>
+            <li>перший</li>
+            <li>другий</li>
+            <li>третій</li>
+            <li>четвертий</li>
+            <li>п'ятий</li>
+        </ul>
+
+        <nav>
+            <ul>
+                <li><a href="#one">Nav link 1</a></li>
+                <li><a href="#two">Nav link 2</a></li>
+                <li><a href="#three">Nav link 3</a></li>
+                <li><a href="#four">Nav link 4</a</li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="wrapper">
+        <h1>Що таке HTML</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/128px-HTML5_logo_and_wordmark.svg.png" alt="html-photo" width="200px" height="200px">
+        <a href="https://uk.wikipedia.org/wiki/HTML">wikipedia site</a>
+
+
+        <div class="information-container">
+            <p class="toggle-header">HTML</p>
+            <div>
+                HTML (англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду вебсторінок у браузері.
+                 Браузери отримують HTML документ від сервера за протоколами HTTP/HTTPS або відкривають з локального диска, далі інтерпретують код в інтерфейс, який відображатиметься на екрані монітора.
+            </div>
+        <br>
+        <p class="toggle-header">Elements HTML</p>
+
+            <div>
+                Елементи HTML є будівельними блоками сторінок HTML. За допомогою конструкцій HTML, зображення та інші об'єкти, такі як інтерактивні форми, можуть бути вбудовані у візуалізовану сторінку. HTML надає засоби для створення структурованих документів, позначаючи структурну семантику тексту, наприклад заголовки, абзаци, списки, посилання, цитати та інші елементи. Елементи HTML окреслені тегами, написаними з використанням кутових дужок. Теги на кшталт img чи input безпосередньо виводять вміст на сторінку. Інші теги, такі як P, оточують текст і надають інформацію про нього, а також можуть включати інші теги як піделементи. Браузери не показують теги HTML, але використовують їх для інтерпретації вмісту сторінки.
+            </div>
+            <br>
+        <p class="toggle-header">HTML AND JAVASCRIPT</p>
+
+            <div>
+                В HTML можна вбудовувати програми, написані на скриптових мовах, наприклад JavaScript, які впливають на поведінку та вміст вебсторінок. Включення CSS визначає вигляд і компонування вмісту. World Wide Web Consortium (W3C), який супроводжує стандарти HTML та CSS, заохочує використання CSS над явним презентаційним HTML з 1997 року.[1]
+
+                HTML впроваджує засоби для:
+
+                <ul>
+                    <li>
+                        створення структурованого документа шляхом позначення структурного складу тексту: заголовки, абзаци, списки, таблиці, цитати та інше;
+                    </li>
+                    <li>
+                        отримання інформації зі Всесвітньої мережі через гіперпосилання;
+                    </li>
+                    <li>
+                        створення інтерактивних форм;
+                    </li>
+                    <li>
+                        включення зображень, звуку, відео, та інших об'єктів до тексту.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleHeaders = document.querySelectorAll('.toggle-header');
+
+        toggleHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const informationContainer = header.nextElementSibling;
+
+            if (informationContainer.style.display === 'none' || informationContainer.style.display === '') {
+                informationContainer.style.display = 'block';
+            } else {
+                informationContainer.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</body>
+</html>

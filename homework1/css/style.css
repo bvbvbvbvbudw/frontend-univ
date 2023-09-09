@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+.container-header-list ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+    margin: 6px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+.container-header-list ul li:hover{
+    color: red;
+}
+.container-header-title{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgb(126,0,25);
+    height: 100px;
+}
+.header-hamburger{
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+.header-hamburger p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.container-logo p:nth-child(1){
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+}
+.container-logo p{
+    text-transform: uppercase;
+}
+.container-logo{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-buttons-header{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.container-buttons-header button{
+    background-color: rgb(126,0,25);
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.wrapper-kill-list{
+    background-color: rgb(238,239,240);
+}
+.br{
+    border-right: 1px solid white;
+}
+.bl{
+    border-left: 1px solid white;
+}
+.bd{
+    border-bottom: 1px solid white;
+}
+.container-kill{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper-kill-list h5{
+    color: red;
+
+    padding: 10px;
+    margin-left: 250px;
+}
+.item-kill p{
+    font-size: 10px;
+}
+.item-kill{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 1px; */
+}
+.item-kill .count{
+    font-weight: bold;
+}
+.news-wrapper{
+    background-color: rgb(59,59,62);
+}
+.news-wrapper img{
+    width: 230px;
+    height: 128px;
+}
+.main-news{
+    color: white;
+    display: flex;
+    font-size: 40px;
+    gap: 20px;
+    text-align: start;
+}
+.main-news h4 {
+    margin-top: -8px;
+}
+.container-news{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.list-news ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+    color: white;
+  }
+  
+.list-news ul li::marker {
+    content: "▪";
+    font-weight:bold;
+    color: red;
+}

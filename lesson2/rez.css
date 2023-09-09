@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-image: url(wave-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+}
+.img{
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 5px;
+}
+.text-img-container{
+    display: flex;
+    flex-direction: column;
+}
+.text-container{
+    padding:70px
+}
+h2::first-letter{
+    color: green;
+}
+h2{
+    border-bottom: 1px solid blue;
+}
+p{
+    font-size: 25px;
+}
