@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+}
+header{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/apples.jpg);
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    padding: 30px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.container-header-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 290px;
+}
+.up-cont p{
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+.up-cont span{
+    font-size: 70px;
+}
+.up-cont{
+    margin-top: 200px;
+}
+.up-cont h5{
+    margin:0;
+    color: white;
+    font-size:16px ;
+}
+.container-header-button button{
+    background-color: #00000042;
+    border: 1px solid white;
+    color: white;
+    width: 220px;
+    height: 60px;
+    font-size: 17px;
+}
+.first-column{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    align-items: center;
+}
+.main-content h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+.wrapper-content{
+    background-color: #f3f3f3;
+    padding-bottom: 100px;
+}
+.main-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.item-main{
+    background-image: url(img/sample.jpg);
+    width: 770px;
+    height: 300px;
+    flex: 0 0 50%;
+    position: relative;
+    color: white;
+}
+.item-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00000042;
+    border: 1px solid white;
+    margin: 20px;
+    padding: 5px;
+}
+  
+.likes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00000042;
+    border: 1px solid white;
+    margin: 20px;
+    padding: 5px;
+}
+.container-letter{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+}
+.container-letter p{
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+.input-container input{
+    width: 600px;
+    height: 99%;
+    background-color: #f3f3f3;
+    border: none;
+}
+.input-container button{
+    height: 100%;
+    background-color: #343638;
+    color: white;
+    border: none;
+}
+footer{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+footer .input-container{
+    width: 171px!important;
+}
+.info{
+    color: grey;
+}
+.footer-title{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-title ul, .footer-title{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title ul{
+    gap: 50px;
+    list-style: none;
+}
+hr{
+
+    width: 80%;
+    margin: 0 auto;
+}
