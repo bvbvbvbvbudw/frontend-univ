@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -78,9 +78,36 @@ header{
     text-align: start;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
-.text-content h2{
-    font-size:55px
+.photo-content #prev, .photo-content #next {
+    background-color: rgba(206, 206, 206, 0.25);
+    color: white;
+    border: none;
+    width: 80px;
+    height: 72px;
+
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+
+    transition-duration: .5s;
+}
+.photo-content #prev:hover, .photo-content #next:hover{
+    scale: 1.2;
+}
+.photo-content #prev {
+    left: 0;
+    transform: translate(-30%, -30%);
+}
+
+.photo-content #next {
+    right: 0;
+    transform: translate(30%, -30%);
+}
+
+.text-content h1{
+    font-size:90px
 }
 .text-content p {
     font-size: 30px;
@@ -89,4 +116,156 @@ header{
     width: 350px;
     padding: 70px 400px;
 }
+.text-content button{
+    background-color: yellow;
+    width: 250px;
+    height:80px;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+}
 
+.menu-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    align-content: center;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.menu-gallery h2{
+    font-size: 50px;
+}
+.content-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1200px;
+    height: 615px;
+}
+.menu-item {
+    background-image: url("https://livedemo00.template-help.com/wt_51689/images/menu-1-370x278.jpg");
+    width: 369px;
+    height: 277px;
+    position: relative;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.menu-text {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.menu-text p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.menu-icon{
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    color: black;
+    border:none;
+
+    background-color: yellow;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-gallery-pizza{
+    position: relative;
+    margin-top: 120px;
+    background-image: url('https://livedemo00.template-help.com/wt_51689/images/bg-3.jpg');
+    width: 100%;
+    height: 516px;
+    background-repeat: no-repeat;
+}
+.text-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    width: 350px;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+
+    color: white;
+}
+.text-gallery h3{
+    font-size:40px;
+}
+.text-gallery p{
+    font-size:25px;
+}
+.text-gallery button{
+    font-weight: bold;
+    width: 273px;
+    height: 75px;
+    color: #ffffff;
+    background-color: #73cca1;
+    border: none;
+}
+.container-selected-pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-items-pizza{
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+.stars{
+    font-size:18px;
+    color: yellow;
+}
+.item-pizza p, .item-pizza span, .stars{
+    text-align: start;
+    padding-left: 30px;
+}
+.item-pizza{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.item-pizza img{
+    padding-top:50px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
