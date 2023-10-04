@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.wrapper-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-todo {
+    display: flex;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    width: 300px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.inner-item {
+    margin-top: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.todo {
+    border: 2px solid #FF6F61;
+}
+
+.process {
+    border: 2px solid #FFD700;
+}
+
+.done {
+    border: 2px solid #00FF00;
+}
+.nextStepProcess, .nextStepDone, .delete{
+    color: blue;
+    cursor: pointer;
+    padding: 10px;
+}
