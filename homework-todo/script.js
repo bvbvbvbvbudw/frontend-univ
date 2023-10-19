@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function (){
-
     document.getElementById('createTaskHandler').addEventListener('submit', function (e){
         e.preventDefault()
-
         const text = document.getElementById('inputTask').value;
         const todo = document.getElementById('todo');
 
@@ -12,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function (){
 
         ProcessHandler();
     })
-
     function ProcessHandler() {
         let nextStepProcessElements = document.querySelectorAll('.nextStepProcess');
         nextStepProcessElements.forEach(function(element) {
@@ -20,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function (){
             element.addEventListener('click', processClick);
         });
     }
-
     function processClick() {
-        let el = this.parentNode;  // Use "this" to refer to the clicked element
+        let el = this.parentNode;
         const text = el.innerText.split(' В процессі')[0];
         el.remove();
         const process = document.getElementById('process');
@@ -31,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function (){
         process.appendChild(newTask);
         DoneHandler();
     }
-
     function DoneHandler() {
         let nextStepDoneElements = document.querySelectorAll('.nextStepDone');
         nextStepDoneElements.forEach(function(element) {
@@ -39,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function (){
             element.addEventListener('click', doneClick);
         });
     }
-
     function doneClick() {
         let el = this.parentNode;
         const text = el.innerText.split(' Зроблено')[0];
@@ -50,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function (){
         done.appendChild(newTask);
         DeleteHandler();
     }
-
     function DeleteHandler() {
         let deleteElements = document.querySelectorAll('.delete');
         deleteElements.forEach(function(element) {
@@ -58,8 +51,60 @@ document.addEventListener('DOMContentLoaded', function (){
             element.addEventListener('click', deleteClick);
         });
     }
-
     function deleteClick() {
         this.parentNode.remove();
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let todo = ['123','321','543']
+let process = ['321', '123', '22']
+let done = ['d']
+
+function print() {
+    const container = document.getElementById('dwadwa')
+    todo.forEach(function(element){
+        let tag = document.createElement('p')
+        tag.addEventListener('click', updateHandler)
+        tag.innerText = element;
+        container.appendChild(tag)
+    })
+}
+print()
+function updateHandler(e){
+    console.log(e)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
